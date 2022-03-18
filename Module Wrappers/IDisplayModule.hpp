@@ -113,7 +113,7 @@ namespace arcade
     class IDisplayModule
     {
         public:
-            virtual ~IDisplayModule();
+            virtual ~IDisplayModule() = default;
             
         public:
             // INPUTS :
