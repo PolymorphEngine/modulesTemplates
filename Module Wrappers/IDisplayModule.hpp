@@ -175,6 +175,9 @@ namespace arcade
             // MUST: display the content
             virtual void displayWindow() = 0;
 
+            //MUST: close the window and set the isOpen() return to false
+            virtual void closeWindow() = 0;
+
             /////////////////////////////////////////////////////////
 
 
