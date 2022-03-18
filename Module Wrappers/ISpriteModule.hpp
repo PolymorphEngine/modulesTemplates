@@ -27,6 +27,6 @@ namespace arcade
             virtual void setCrop(int x, int y, int width, int height) = 0;
 
             // MUST: set the sprite color
-            virtual void setColor() = 0;
+            virtual void setColor(unsigned char r, unsigned char g, unsigned char b) = 0;
     };
 }

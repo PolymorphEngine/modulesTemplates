@@ -27,7 +27,7 @@ namespace arcade
             virtual void setFont(string font) = 0;
 
             // MUST: Set the text color
-            virtual void setColor(int r, int g, int b) = 0;
+            virtual void setColor(unsigned char r, unsigned char g, unsigned char b) = 0;
 
             // MUST: Set the text size
             virtual void setSize(int size) = 0;
