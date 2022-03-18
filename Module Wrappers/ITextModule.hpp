@@ -3,6 +3,7 @@ namespace arcade
     class ITextModule
     {
         public:
+            virtual ~ITextModule() = 0;
             // USED ONLY IN WRAPPER
             // MUST : return the text object to draw
             virtual void *getText() = 0;

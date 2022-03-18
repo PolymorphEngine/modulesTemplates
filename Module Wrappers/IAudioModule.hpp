@@ -4,7 +4,7 @@ namespace arcade
     {
         public:
 
-
+            virtual ~IAudioModule() = 0;
             // ALL FILE TYPES MUST BE AT THE PATH SPECIFIED
             // MUST: loads and set an audio file 
             //ex SFML:
