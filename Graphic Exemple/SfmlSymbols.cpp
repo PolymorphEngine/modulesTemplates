@@ -8,7 +8,7 @@ extern "C" IDisplayModule *createDisplay()
 
 extern "C" void deleteDisplay(IDisplayModule *module)
 {
-    delete dynamic_cast<SfmlDisplay*>(module);
+    delete module;
 }
 
 
@@ -22,7 +22,7 @@ extern "C" ISpriteModule *createSprite()
 
 extern "C" void deleteSprite(ISpriteModule *module)
 {
-    delete dynamic_cast<SfmlSprite*>(module);
+    delete module;
 }
 
 
