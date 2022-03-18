@@ -21,7 +21,7 @@ namespace arcade
             virtual void setPosition(float x, float y) = 0;
 
             // MUST: move the sprite
-            virtual void move(int x, int y) = 0;
+            virtual void move(float x, float y) = 0;
 
             // MUST: set texture crop to the sprite (does maybe nothing based on lib)
             virtual void setCrop(int x, int y, int width, int height) = 0;
