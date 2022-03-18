@@ -3,7 +3,7 @@ namespace arcade
     class ISpriteModule
     {
         public:
-            virtual ~ISpriteModule() = 0;
+            virtual ~ISpriteModule();
             // USED ONLY IN WRAPPER
             //MUST : return the object sprite or texture to draw
             virtual void *getSprite() = 0;

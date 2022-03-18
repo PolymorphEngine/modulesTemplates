@@ -110,10 +110,10 @@ namespace arcade
 
     };
         
-    class IDisplyModule
+    class IDisplayModule
     {
         public:
-            virtual ~IDisplyModule() = 0;
+            virtual ~IDisplayModule();
             
         public:
             // INPUTS :
