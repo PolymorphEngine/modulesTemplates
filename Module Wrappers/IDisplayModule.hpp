@@ -143,10 +143,10 @@ namespace arcade
             virtual void setResolution(int x, int y) = 0;
 
             // MUST : return the width of the window
-            virtual int getWindowWidth() = 0;
+            virtual unsigned int getWindowWidth() = 0;
 
             // MUST : return the height of the window
-            virtual int getWindowHeight() = 0;
+            virtual unsigned int getWindowHeight() = 0;
 
             // MUST : sets Fps (if possible)
             virtual void setFps(int fps) = 0;
