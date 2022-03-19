@@ -13,10 +13,10 @@ namespace arcade
             virtual void setText(string text) = 0;
 
             // MUST: Set the text position;
-            virtual void setPosition(int x, int y) = 0;
+            virtual void setPosition(float x, float y) = 0;
 
             // MUST: move the text
-            virtual void move(int x, int y) = 0;
+            virtual void move(float x, float y) = 0;
 
 
             // ALL FILE TYPES MUST BE AT THE PATH SPECIFIED

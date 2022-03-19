@@ -122,10 +122,10 @@ namespace arcade
             virtual bool isKeyPressed(KeyCode Code) = 0;
 
             // MUST: return the actual x position of the mouse
-            virtual int getMouseXPosition() = 0;
+            virtual unsigned int getMouseXPosition() = 0;
 
             // MUST: return the actual y position of the mouse
-            virtual int getMouseYPosition() = 0;
+            virtual unsigned int getMouseYPosition() = 0;
 
             // MUST : Stores inputs (must be called once per frame, ex: before any logic calls to use them of course)
             virtual void fetchInputs() = 0;
