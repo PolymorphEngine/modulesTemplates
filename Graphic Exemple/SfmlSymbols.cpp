@@ -1,6 +1,6 @@
 // DL SYMBOLS to create modules
 
-extern "C" IDisplayModule *createDisplay()
+extern "C" IDisplayModule *createDisplay(unsigned int width, unsigned int height, std::string title);
 {
     return new SfmlDisplay();
 }
