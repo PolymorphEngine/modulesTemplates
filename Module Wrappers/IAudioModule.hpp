@@ -1,7 +1,5 @@
-namespace arcade
+ class IAudioModule
 {
-    class IAudioModule
-    {
         public:
 
             virtual ~IAudioModule() = default;
@@ -23,7 +21,7 @@ namespace arcade
             virtual void stop() = 0;
 
             // Must set the volume
-            virtual void setVolume() = 0;
+            virtual void setVolume(float volume) = 0;
     
     }
 }
