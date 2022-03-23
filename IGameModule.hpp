@@ -2,10 +2,6 @@ namespace arcade
 {
     class IGameModule
     {
-
-        /** @returns if this library is the menu */
-        bool isMenu();
-
         /** @returns the path of the coreboard file */
         std::string scoreboardPath();
 
