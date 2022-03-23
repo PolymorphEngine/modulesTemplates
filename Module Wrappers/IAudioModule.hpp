@@ -1,5 +1,15 @@
- class IAudioModule
-{
+/*
+** EPITECH PROJECT, 2022
+** archi
+** File description:
+** IAudioModule
+*/
+
+#include <string>
+
+namespace arcade {
+    class IAudioModule
+    {
         public:
 
             virtual ~IAudioModule() = default;
@@ -9,7 +19,7 @@
             // assetPath = ./Assets/Pacman/enemy/sound
             // real path = ./Assets/Pacman/enmey/font.ttf
 
-            virtual void setSource(string source_path) = 0;
+            virtual void setSource(std::string source_path) = 0;
 
             // MUST play the audio source (maybe instantiate it here)
             virtual void play() = 0;
@@ -23,5 +33,5 @@
             // Must set the volume
             virtual void setVolume(float volume) = 0;
     
-    }
+    };
 }

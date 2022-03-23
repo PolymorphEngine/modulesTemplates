@@ -1,3 +1,12 @@
+/*
+** EPITECH PROJECT, 2022
+** archi
+** File description:
+** IGameModule
+*/
+
+#include <string>
+
 namespace arcade 
 {
     class IGameModule

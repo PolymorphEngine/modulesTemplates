@@ -1,3 +1,14 @@
+/*
+** EPITECH PROJECT, 2022
+** archi
+** File description:
+** IDisplayModule
+*/
+
+#include <string>
+#include "ISpriteModule.hpp"
+#include "ITextModule.hpp"
+
 namespace arcade
 {
     enum KeyCode
@@ -140,7 +151,7 @@ namespace arcade
             // WINDOW :
 
             // MUST : sets resolution (does what you want in ncurse)
-            virtual void setResolution(int x, int y) = 0;
+            virtual void setResolution(unsigned int x, unsigned int y) = 0;
 
             // MUST : return the width of the window
             virtual unsigned int getWindowWidth() = 0;
@@ -186,12 +197,12 @@ namespace arcade
             // DRAW LOGIC:  
 
             // MUST : draw a sprite module
-            virtual void draw(ISpriteModule *sprite) = 0;
+            virtual void draw(arcade::ISpriteModule *sprite) = 0;
 
             // MUST : draw a text module
-            virtual void draw(ITextModule *text) = 0;
+            virtual void draw(arcade::ITextModule *text) = 0;
     
             /////////////////////////////////////////////////////////
-    }
+    };
 }
 

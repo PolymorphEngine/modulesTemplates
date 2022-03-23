@@ -1,3 +1,12 @@
+/*
+** EPITECH PROJECT, 2022
+** archi
+** File description:
+** ISpriteModule
+*/
+
+#include <string>
+
 namespace arcade
 {
     class ISpriteModule
@@ -16,7 +25,6 @@ namespace arcade
             // real path (inside sfml implementation) =./Assets/Pacman/enmey/goblin/enemy.png  or .jpeg
             virtual void setSprite(std::string filePath) = 0;
 
-            
             // MUST: set position of the sprite
             virtual void setPosition(float x, float y) = 0;
 

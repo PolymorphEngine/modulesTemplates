@@ -1,3 +1,12 @@
+/*
+** EPITECH PROJECT, 2022
+** archi
+** File description:
+** ITextModule
+*/
+
+#include <string>
+
 namespace arcade
 {
     class ITextModule
@@ -10,7 +19,7 @@ namespace arcade
             
 
             // MUST: set the text value
-            virtual void setText(string text) = 0;
+            virtual void setText(std::string text) = 0;
 
             // MUST: Set the text position;
             virtual void setPosition(float x, float y) = 0;
@@ -24,12 +33,12 @@ namespace arcade
             //ex SFML: 
             // assetPath = ./Assets/Pacman/enemy/font
             // real path = ./Assets/Pacman/enmey/font.ttf
-            virtual void setFont(string font) = 0;
+            virtual void setFont(std::string font) = 0;
 
             // MUST: Set the text color
             virtual void setColor(unsigned char r, unsigned char g, unsigned char b) = 0;
 
             // MUST: Set the text size
             virtual void setSize(int size) = 0;
-    }
+    };
 }
