@@ -45,28 +45,33 @@ We must aggree on a **symbol signature** to load our classes, I propose the foll
 	```cpp
         extern "C" IGameModule *createGame();
         extern "C" void deleteGame(IGameModule *module);
-	
 	extern "C" bool isMenu();
 	```
 
 # Updates
-1.0) First Idea
+***1.0) First Idea***
 - These documentation/Interfaces files are not finished yet (they are still on mockup)
 - We ask anybody to add new ideas in the chat and we will update it for sure :)
-2.0) Added Modules
+
+***2.0) Added Modules***
 - Added IAudioModule
 - Added all key codes for inputs
 - Slowly getting to usable code instead of pseudo code
 - Didn't touched exemples
-2.1) Added exemples
+
+***2.1) Added exemples***
 - Specified exemples in sfml wrapper
-2.2) Discussed things
+
+***2.2) Discussed things***
 - Documented file types management
 - Removed getType from IDisplayModule
 
+***3.0) Updated ReadMe***
+- Fix to Discuss
+- Added symbol for game module
 
 
 # To Discuss
-- Do we want to be able to pass arguments at module construction ? If yes it must be the case at all time ! Result : NO
-- File types ? Result : Give filepath without extention, must have all file types in directory
-- throw or noexept ?  : Throw a specific class 
+- Do we want to be able to pass arguments at module construction ? If yes it must be the case at all time ! Result : **NO**
+- File types ? Result : Anyway ! Sprites = give **.png or .jpeg**. Text = give **ttf for fonts**
+- throw or noexept ?  : Throw a **standard exception**
