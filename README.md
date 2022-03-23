@@ -45,6 +45,8 @@ We must aggree on a **symbol signature** to load our classes, I propose the foll
 	```cpp
         extern "C" IGameModule *createGame();
         extern "C" void deleteGame(IGameModule *module);
+	
+	extern "C" bool isMenu();
 	```
 
 # Updates
