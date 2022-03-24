@@ -6,6 +6,7 @@
 */
 
 #include <string>
+#include <vector>
 
 namespace arcade 
 {
@@ -15,10 +16,15 @@ namespace arcade
         std::string scoreboardPath();
 
         /**
-         * @returns int (status code): (1) if next game, (-1) if previous game, (0) if end, (84) if error
-         *          string : path to actual .so grpahical lib
+         * @returns tuple with :
+         *              - int : status code
+         *              - std::string : path to the next gameLib to launch
+         *              - std::string : path to graphical lib to launch by the the new game
+         * @params gameLibs vector of all the loadable game libs
+         * @params graphLibs vector of all the loadable graphical libs
+         * @params pathToGraphLib the path of the grpahical lib that will be used at the start of the game
          */
-        std::pair<int, std::string> run(std::string pathToGraphLib);
+        std::tuple<int, std::string, std::string> run(const std::vector<std::string>& gameLibs, const std::vector<std::string>& graphLibs, const std::string& pathToGraphLib);
 
     };
 }
