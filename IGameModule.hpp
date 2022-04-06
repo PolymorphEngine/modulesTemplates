@@ -24,7 +24,10 @@ namespace arcade
          * @params graphLibs vector of all the loadable graphical libs
          * @params pathToGraphLib the path of the grpahical lib that will be used at the start of the game
          */
-        std::tuple<int, std::string, std::string> run(const std::vector<std::string>& gameLibs, const std::vector<std::string>& graphLibs, const std::string& pathToGraphLib);
+        std::tuple<int, std::string, std::string> run(const std::vector<std::string>& gameLibs, 
+                                                      const std::vector<std::string>& graphLibs, 
+                                                      const std::string &pathToMenuLib, 
+                                                      const std::string& pathToGraphLib);
 
     };
 }

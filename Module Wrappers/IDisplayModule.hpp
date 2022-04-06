@@ -39,6 +39,12 @@ namespace arcade
         X,              //   The X key.
         Y,              //   The Y key.
         Z,              //     The Z key.
+        ArrowUp,        // The Arrow Up key.
+        ArrowRight,     // The Arrow Right key.
+        ArrowDown,      // The Arrow Down key.
+        ArrowLeft,      // The Arrow Left key.
+        Enter,          // The Enter key.
+        Backspace,      // The Backspace key.
         KeyCount,       //    Keep last – the total number of keyboard keys.
         MouseButton1,   //    Left Click
         MouseButton2,   //    RightClick
